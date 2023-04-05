@@ -1,0 +1,28 @@
+{
+   "$schema": "https://clouddocs.f5.com/products/waf-declarative-policy/_downloads/89c7f4f188779cd06904c6c31403f01b/schema_v16_1.json",
+   "policy": {
+      "name": "VAmPI_Application_Security_Policy",
+      "description": "VAmPI is a vulnerable API made with Flask and it includes vulnerabilities from the OWASP top 10 vulnerabilities for APIs.",
+      "template": {
+         "name": "POLICY_TEMPLATE_API_SECURITY"
+      },
+      "applicationLanguage": "utf-8",
+      "enforcementMode": "blocking",
+      "general": {
+         "trustXff": true
+      },
+      "open-api-files": [
+         {
+            "link": "https://raw.githubusercontent.com/erev0s/VAmPI/master/openapi_specs/openapi3.yml"
+         }
+      ],
+      "response-pages": [
+         {
+            "responsePageType": "default",
+            "responseActionType": "custom",
+            "responseContent": "{ \"message\":\"Not today, hacker!\", \"supportId\": \"<%TS.request.ID()%>\" }"
+         }
+      ]
+   },
+   "modifications": []
+}
