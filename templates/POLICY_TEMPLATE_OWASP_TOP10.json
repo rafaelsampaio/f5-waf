@@ -1,9 +1,9 @@
 {
     "$schema": "https://clouddocs.f5.com/products/waf-declarative-policy/_downloads/b5dbc8ac6cff532906c65123e2783d40/schema_v17_1.json",
     "policy": {
-        "name": "TEMPLATE_BLANK",
+        "name": "TEMPLATE_OWASP_TOP10",
         "template": {
-           "name": "POLICY_TEMPLATE_BLANK"
+           "name": "POLICY_TEMPLATE_OWASP_TOP10"
         }
      },
      "modifications": []

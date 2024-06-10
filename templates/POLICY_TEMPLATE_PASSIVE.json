@@ -1,11 +1,10 @@
 {
-    "$schema": "https://clouddocs.f5.com/products/waf-declarative-policy/_downloads/89c7f4f188779cd06904c6c31403f01b/schema_v16_1.json",
+    "$schema": "https://clouddocs.f5.com/products/waf-declarative-policy/_downloads/b5dbc8ac6cff532906c65123e2783d40/schema_v17_1.json",
     "policy": {
         "name": "TEMPLATE_PASSIVE",
         "template": {
            "name": "POLICY_TEMPLATE_PASSIVE"
-        },
-        "softwareVersion": "16.1"
+        }
      },
      "modifications": []
 }

@@ -1,0 +1,103 @@
+{
+    "$schema": "https://raw.githubusercontent.com/F5Networks/f5-appsvcs-extension/main/schema/latest/as3-schema.json",
+    "class": "ADC",
+    "schemaVersion": "3.50.0",
+    "Common": {
+        "class": "Tenant",
+        "Shared": {
+            "template": "shared",
+            "class": "Application",
+            "shared-api-security": {
+                "class": "WAF_Policy",
+                "remark": "API Security",
+                "label": "API Security",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_API_SECURITY.json",
+                "ignoreChanges": false
+            },
+            "shared-behavioral_waf": {
+                "class": "WAF_Policy",
+                "remark": "Behavioral",
+                "label": "Behavioral",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_BEHAVIORAL_WAF.json",
+                "ignoreChanges": false
+            },
+            "shared-blank": {
+                "class": "WAF_Policy",
+                "remark": "Blank",
+                "label": "Blank",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_BLANK.json",
+                "ignoreChanges": false
+            },
+            "shared-compreensive": {
+                "class": "WAF_Policy",
+                "remark": "Comprehensive",
+                "label": "Comprehensive",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_COMPREHENSIVE.json",
+                "ignoreChanges": false
+            },
+            "shared-fundamental": {
+                "class": "WAF_Policy",
+                "remark": "Fundamental",
+                "label": "Fundamental",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_FUNDAMENTAL.json",
+                "ignoreChanges": false
+            },
+            "shared-graphql": {
+                "class": "WAF_Policy",
+                "remark": "GraphQL",
+                "label": "GraphQL",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_GRAPHQL.json",
+                "ignoreChanges": false
+            },
+            "shared-miniral-security": {
+                "class": "WAF_Policy",
+                "remark": "Minimal Security",
+                "label": "Minimal Security",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_MINIMAL_SECURITY.json",
+                "ignoreChanges": false
+            },
+            "shared-owasp-top10": {
+                "class": "WAF_Policy",
+                "remark": "OWASP Top 10",
+                "label": "OWASP Top 10",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_OWASP_TOP10.json",
+                "ignoreChanges": false
+            },
+            "shared-passive": {
+                "class": "WAF_Policy",
+                "remark": "Passive",
+                "label": "Passive",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_PASSIVE.json",
+                "ignoreChanges": false
+            },
+            "shared-pci-compliance": {
+                "class": "WAF_Policy",
+                "remark": "PCI Compliance",
+                "label": "PCI Compliance",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_PCI_COMPLIANCE.json",
+                "ignoreChanges": false
+            },
+            "shared-rapid-deployment": {
+                "class": "WAF_Policy",
+                "remark": "Rapid Deployment",
+                "label": "Rapid Deployment",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_RAPID_DEPLOYMENT.json",
+                "ignoreChanges": false
+            },
+            "shared-rating-based": {
+                "class": "WAF_Policy",
+                "remark": "Rating Based",
+                "label": "Rating Based",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_RATING_BASED.json",
+                "ignoreChanges": false
+            },
+            "shared-vulnerability-assessment": {
+                "class": "WAF_Policy",
+                "remark": "Vulnerability Assessment",
+                "label": "Vulnerability Assessment",
+                "url": "https://raw.githubusercontent.com/rafaelsampaio/f5-waf/main/templates/POLICY_TEMPLATE_VULNERABILITY_ASSESSMENT.json",
+                "ignoreChanges": false
+            }
+        }
+    }
+}
